@@ -1,13 +1,29 @@
 import { Component } from "react";
+import Card from "react-bootstrap/Card";
 
 class HornedBeasts extends Component {
+  state = {
+    vote: 0,
+  };
+
+  IncrementVote = () => {
+    this.setState({ vote: this.state.vote + 1 });
+  };
+
   render() {
     return (
-      <div className="beasts">
-        <h2>{this.props.title}</h2>
-        <p>{this.props.description}</p>
-        <img src={this.props.imageUrl} alt={this.props.title} />
-      </div>
+      <Card style={{ width: "18rem" }} bg="dark" text="light">
+        <Card.Img
+          variant="top"
+          src={this.props.image_url}
+          onClick={this.IncrementVote}
+        />
+        <Card.Body>
+          <Card.Title>{this.props.title}</Card.Title>
+          <Card.Text>❤️ = {this.state.vote} </Card.Text>
+          <Card.Text>{this.props.description}</Card.Text>
+        </Card.Body>
+      </Card>
     );
   }
 }
