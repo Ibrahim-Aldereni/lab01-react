@@ -9,32 +9,32 @@ This project is the first react app we created.
 
   - **Feature #1: Display images**
 
-    - Estimate of time needed to complete: 15 min
+    - Estimate of time needed to complete: 30 min
 
-    - Start time:
+    - Start time: 2:35
 
-    - Finish time:
+    - Finish time: 2:50
 
-    - Actual time needed to complete:
+    - Actual time needed to complete: 20 min
 
   - **Feature #2: Allow users to vote for their favorite beast**
 
     - Estimate of time needed to complete: 15 min
 
-    - Start time:
+    - Start time: 3:00
 
-    - Finish time:
+    - Finish time: 3:15
 
-    - Actual time needed to complete:
+    - Actual time needed to complete: 15 min
 
   - **Feature #3: Bootstrap**
 
-    - Estimate of time needed to complete: 20 min
+    - Estimate of time needed to complete: 30 min
 
-    - Start time:
+    - Start time: 2:15
 
-    - Finish time:
+    - Finish time: 2:35
 
-    - Actual time needed to complete:
+    - Actual time needed to complete: 20 min
 
 ## Author: Ibrahim Aldereni
