@@ -1,5 +1,4 @@
 import { Component } from "react";
-import Card from "react-bootstrap/Card";
 
 class Header extends Component {
   state = {
@@ -12,14 +11,9 @@ class Header extends Component {
 
   render() {
     return (
-      <Card
-        bg="dark"
-        text="light"
-        style={{ height: "5rem", textAlign: "center", fontSize: "30px" }}
-        onClick={this.Change}
-      >
+      <p className="HeadFoot" onClick={this.Change}>
         {this.state.text}
-      </Card>
+      </p>
     );
   }
 }

@@ -43,10 +43,10 @@ This project is the first react app.
 
     - Estimate of time needed to complete: 1 hour
 
-    - Start time: 2:15
+    - Start time: 12:00
 
-    - Finish time: 2:35
+    - Finish time: 12:40
 
-    - Actual time needed to complete: 20 min
+    - Actual time needed to complete: 40 min
 
 ## Author: Ibrahim Aldereni
