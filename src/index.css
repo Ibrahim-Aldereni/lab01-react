@@ -13,3 +13,11 @@
   color: white;
   border-radius: 10px;
 }
+
+.close {
+  font-size: 40px;
+  cursor: pointer;
+}
+.close:hover {
+  color: grey;
+}

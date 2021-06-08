@@ -8,8 +8,11 @@ class ModalPopUp extends Component {
     return (
       <>
         <Modal show={this.props.show} onHide={this.props.closeFuc}>
-          <Modal.Header closeButton>
+          <Modal.Header>
             <Modal.Title>{this.props.title}</Modal.Title>
+            <span className="close" onClick={this.props.closeFuc}>
+              &times;
+            </span>
           </Modal.Header>
 
           <Modal.Body>
