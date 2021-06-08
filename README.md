@@ -1,8 +1,8 @@
-# Lab-01, Lab-02
+# Lab-01, Lab-02, Lab-03
 
 ## Project Name: react Horned Beasts
 
-This project is the first react app we created.
+This project is the first react app.
 
 - In lab-01 I created a simple react app structure.
 - In lab-02 I use state to mak dynamic vote and react bootstrap for styling
@@ -36,5 +36,17 @@ This project is the first react app we created.
     - Finish time: 2:35
 
     - Actual time needed to complete: 20 min
+
+- In lab-02 I need to show pop up when click on the photo.
+
+  - **Feature #1: Display a Modal**
+
+    - Estimate of time needed to complete: 1 hour
+
+    - Start time: 12:00
+
+    - Finish time: 12:40
+
+    - Actual time needed to complete: 40 min
 
 ## Author: Ibrahim Aldereni
