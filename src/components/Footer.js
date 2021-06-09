@@ -2,7 +2,7 @@ import { Component } from "react";
 
 class Footer extends Component {
   state = {
-    text: "&copy; Rights reserved - Ibrahim Aldereni",
+    text: "\u00A9 Rights reserved - Ibrahim Aldereni",
   };
 
   Change = () => {

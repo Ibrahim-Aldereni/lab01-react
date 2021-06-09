@@ -1,4 +1,4 @@
-# Lab-01, Lab-02, Lab-03
+# Lab-01, Lab-02, Lab-03, Lab-04
 
 ## Project Name: react Horned Beasts
 
@@ -37,7 +37,7 @@ This project is the first react app.
 
     - Actual time needed to complete: 20 min
 
-- In lab-02 I need to show pop up when click on the photo.
+- In lab-03 I need to show pop up when click on the photo.
 
   - **Feature #1: Display a Modal**
 
@@ -48,5 +48,7 @@ This project is the first react app.
     - Finish time: 12:40
 
     - Actual time needed to complete: 40 min
+
+- In lab-04 I need to create a drop down menu so that the user can choose to filter by number of horns.
 
 ## Author: Ibrahim Aldereni
