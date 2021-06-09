@@ -9,10 +9,14 @@ import Form from "react-bootstrap/Form";
 class Main extends Component {
   state = {
     value: "all",
+    len: 20,
   };
 
+  data2 = [];
+
   selectValue = (e) => {
-    this.setState({ value: e.target.value });
+    e.preventDefault();
+    this.setState({ value: e.target.value, len: this.data2.length });
   };
 
   render() {
@@ -20,7 +24,7 @@ class Main extends Component {
       <>
         <Form className="mb-3 mx-5">
           <Form.Group controlId="exampleForm.SelectCustom">
-            <Form.Label>How many Horns?</Form.Label>
+            <Form.Label>How many Horns? cards num {this.state.len}</Form.Label>
             <Form.Control as="select" onChange={this.selectValue}>
               <option value="all">All</option>
               <option value="one">One</option>
@@ -33,31 +37,33 @@ class Main extends Component {
 
         <Container>
           <Row xs={1} md={3} className="g-4">
-            {data
-              .filter((item) => {
-                if (this.state.value === "all") {
-                  return true;
-                } else if (this.state.value === "one") {
-                  return item.horns === 1;
-                } else if (this.state.value === "two") {
-                  return item.horns === 2;
-                } else if (this.state.value === "three") {
-                  return item.horns === 3;
-                } else {
-                  return item.horns === 100;
-                }
-              })
-              .map((item) => {
-                return (
-                  <Col>
-                    <HornedBeasts
-                      title={item.title}
-                      description={item.description}
-                      image_url={item.image_url}
-                    />
-                  </Col>
-                );
-              })}
+            {
+              (this.data2 = data
+                .filter((item) => {
+                  if (this.state.value === "all") {
+                    return true;
+                  } else if (this.state.value === "one") {
+                    return item.horns === 1;
+                  } else if (this.state.value === "two") {
+                    return item.horns === 2;
+                  } else if (this.state.value === "three") {
+                    return item.horns === 3;
+                  } else {
+                    return item.horns === 100;
+                  }
+                })
+                .map((item) => {
+                  return (
+                    <Col>
+                      <HornedBeasts
+                        title={item.title}
+                        description={item.description}
+                        image_url={item.image_url}
+                      />
+                    </Col>
+                  );
+                }))
+            }
           </Row>
         </Container>
       </>
