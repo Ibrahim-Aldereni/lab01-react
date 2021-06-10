@@ -16,19 +16,12 @@ class Main extends Component {
   selectValue = (e) => {
     e.preventDefault();
 
-    let newData = data.filter((item) => {
-      if (e.target.value === "all") {
-        return true;
-      } else if (e.target.value === "one") {
-        return item.horns === 1;
-      } else if (e.target.value === "two") {
-        return item.horns === 2;
-      } else if (e.target.value === "three") {
-        return item.horns === 3;
-      } else {
-        return item.horns === 100;
-      }
-    });
+    let selectedValue = parseInt(e.target.value);
+    let newData = data;
+
+    if (selectedValue) {
+      newData = data.filter((item) => item.horns === selectedValue);
+    }
 
     this.setState({ arr: newData });
   };
@@ -42,11 +35,11 @@ class Main extends Component {
               How many Horns? (Cards num {this.state.arr.length})
             </Form.Label>
             <Form.Control as="select" onChange={this.selectValue}>
-              <option value="all">All</option>
-              <option value="one">One</option>
-              <option value="two">Two</option>
-              <option value="three">Three</option>
-              <option value="wow">Wow</option>
+              <option value="0">All</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+              <option value="100">Wow</option>
             </Form.Control>
           </Form.Group>
         </Form>
